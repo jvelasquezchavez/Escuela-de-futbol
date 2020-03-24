@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*background-color: rgb(1, 145, 145);*/
+     
+}
+
+/* ************************************** /
+    MENU FIJO MAS LOGO DE PAGINA
+** ************************************** */
+
+header {
+    width: 100%;
+    /*max-width: 100%;*/
+    height: 25%;
+    background: #0061a8;
+     /*MENU FIJO O NO   
+    position: fixed;*/
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    }
+
+.logo{
+    width: 30%;
+    /*height: 140px;
+    background: rgb(1, 145, 145);*/
+
+}
+.normal_logo{
+    /*height: 140px;*/
+    height: 18%;
+    width: 37%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    float: left;
+    margin-left: 17%;
+}
+.titulos{
+    /*font-family: Montserrat,sans-serif;*/
+    font-size: 45px;
+    font-weight: 700 !important;
+    padding-top: 2%;
+
+    text-align: justify;
+    /* height: 30px; */
+    /*font-family: 'antennacond';*/
+    font-family:'Gotham';
+    /*color: #bcc1c9 !important;*/
+    color: #ffffff!important;
+    text-transform: uppercase;
+}
+nav{
+    width: 70%;
+    /*height: 140px;*/
+    height: 18%;
+    background: #0061a8;
+    text-align: left;
+    padding-top: 24px;
+    box-sizing: border-box;
+    max-width: 100%;
+    /*text-overflow: ellipsis;
+    
+    */
+    max-width: 1200px;
+    display: flex;
+    
+ /*   position: sticky;*/
+}
+.menu nav ul{
+    display: inline-flex;
+    list-style: none;
+    
+}
+nav ul li{
+    margin-right: 35px;
+    display: inline-flex;
+    
+}
+.menu li {
+    text-align: center;
+    flex-grow: 1;
+}
+nav ul li a{
+    text-decoration: none;
+    color: seashell;
+    font-weight: bold;
+    line-height: 260%;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-left: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+nav ul li a:hover{
+    color: black;
+}
+
+
+/* ************************************** /
+    CARROUSEL DE IMAGENES DESPLAZADAS 
+** ************************************** */
+
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    width: 500%;
+    padding: 0;
+    animation: cambio 16s infinite alternate;
+    animation-timing-function: ease-out;
+}
+.slider li {
+    width: 130%;
+    list-style: none;
+    height: 100%;
+    
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left : -100%;}
+    45% {margin-left : -100%;}
+
+    50% { margin-left : -200%;}
+    70% {margin-left : -200%;}
+
+    75% { margin-left : -300%;}
+    100% {margin-left : -300%;}
+
+}
+
+
+
+
+
+
+/* ************************************** /
+    INFORMACION DE CONTACTO, PIE DE PAGINA 
+** ***************************************/
+
+.subtitulos{
+
+    font-family: Montserrat,sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700 !important;
+    line-height: 0.9;
+    text-align: left;
+    padding: 13%;
+    /* height: 30px; */
+    /*font-family: 'antennacond';*/
+    /*font-family:'Gotham';*/
+    /*color: #bcc1c9 !important;*/
+    color: #6c757d !important;
+    text-transform: uppercase;
+}
+.textSub{
+
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #212529;
+    text-align: justify;
+    background-color: #fff;
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: block;
+    max-width: 100%;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+.parr{
+    padding-bottom: 5%;
+}
+.cajas{
+    /*background: darkgray;*/
+    margin-left: 9%;
+    margin-top: 5%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #0061a8;
+    margin-bottom: 5%;
+    max-width: 30%;
+    float: none;
+
+}
+.container-columnas{
+    width: 100%;
+    margin: auto;
+}
+.actividades{
+    list-style: none;
+    font-family: sans-serif;
+    line-height: 1.75;
+    text-decoration: none;
+    text-align: justify;
+    display: block;
+    max-width: 100%;
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+/* ************************************** /
+    INFORMACION DE CONTACTO, PIE DE PAGINA 
+** ***************************************/
+
+footer{
+    background: #202020;
+    color: white;
+    width: 100%;
+    font-family: sans-serif;
+    
+}
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+.colMasInfo{
+    max-width: 400px;
+}
+    .colMasInfo h1{
+        font-size: 22px;
+    }
+    .colMasInfo p{
+        font-size: 14px;
+        color: #C7C7C7;
+        margin-top: 20px;
+    }
+
+.colRedSocial{
+    max-width: 400px;
+
+}
+    .colRedSocial h1{
+        font-size: 20px;
+    }
+    .colRedSocial .row{
+        margin-top: 22px;
+        display: flex;
+    }
+    .row img{
+        width: 36px;
+        height: 36px;
+
+    }
+    .row label{
+        margin-top: 10px;
+        margin-left: 20px;
+        color: #C7C7C7;
+        
+    }
+.colContacto{
+    max-width: 400px;
+}
+    .colContacto h1{
+        font-size: 22px;
+
+    }
+    .colContacto .row2{
+        margin-top: 22px;
+        display: flex;
+    }
+    .row2 img{
+        width: 36px;
+        height: 36px;
+
+    }
+    .row2 label{
+        margin-left: 20px;
+        max-width: 150px;
+        margin-top: 10px;
+    }
+.container-footer{
+    width: 100%;
+    background: #101010;
+      
+}
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.copyright{
+    color: #C7C7C7;
+}
+.copyright a{
+    color: #C7C7C7;
+    text-decoration: none;
+    font-weight: bold;
+}
+.information{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+.information a {
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+@media screen and(max-width:1100px){
+    .container-body{
+        flex-wrap: wrap;
+    }
+    .colMasInfo{
+        max-width: 100%;
+
+    }
+    .colContacto, .colRedSocial{
+        margin-top: 40px;
+    }
+}
